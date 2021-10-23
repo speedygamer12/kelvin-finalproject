@@ -1,0 +1,9 @@
+{% extends 'DjangoAPI/base.html' %}
+
+{% block head_title %}Status{% endblock head_title %}
+
+{% block content %}
+  <h2>Remaining Useful Life (RUL): {{data}}</h2>
+  <a href = "{% url 'form' %}"><button class="btn btn-primary btn-lg btn-block" >Go back</button></a>
+  
+{% endblock content %}

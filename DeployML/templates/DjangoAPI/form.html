@@ -1,0 +1,13 @@
+{% extends 'DjangoAPI/base.html' %}
+
+{% block head_title %}Model{% endblock head_title %}
+
+{% block content %}
+<div class="container wow fadeIn">
+  <form method = 'POST'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type = 'submit' value ="submit">Submit</button>
+  </form>
+</div>
+{% endblock content %}
