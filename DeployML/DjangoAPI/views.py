@@ -24,7 +24,7 @@ def status(df):
         model = pickle.load(open("static/model.sav", 'rb'))
         X = scaler.transform(df)
         y_pred = model.predict(X)
-        return y_pred[0]
+        return round(y_pred[0])
 
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
