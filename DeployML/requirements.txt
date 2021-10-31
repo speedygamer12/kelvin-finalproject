@@ -1,6 +1,7 @@
 asgiref==3.4.1
 certifi==2021.10.8
 Django==3.2.8
+django-formtools==2.3
 djangorestframework==3.12.4
 dnspython==2.1.0
 et-xmlfile==1.1.0
