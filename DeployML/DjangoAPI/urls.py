@@ -1,10 +1,7 @@
-from django.urls import path, include
-from . import views
-from rest_framework import routers
+from django.urls import path
+from .views import *
 
-router = routers.DefaultRouter()
 urlpatterns = [
-    path('api/', include(router.urls)),
-    path('', views.home_view, name= 'form'),
+    path('', HomeViewWizard.as_view(), name= 'form'),
     
 ]
